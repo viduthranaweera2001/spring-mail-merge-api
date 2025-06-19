@@ -1,5 +1,5 @@
 
-FROM openjdk:17-jdk-slim
+FROM openjdk:19-jdk-slim
 LABEL authors="viduthranaweera"
 WORKDIR /app
 COPY target/mail-merge-api-0.0.1-SNAPSHOT.jar /app/app.jar
