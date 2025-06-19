@@ -10,32 +10,8 @@ services:
     networks:
       - zerocode_lk_network
     environment:
-#      SPRING_DATASOURCE_URL: jdbc:mysql://mysqldb:3306/zerocode_attendance_db?createDatabaseIfNotExist=true
-#      SPRING_DATASOURCE_USERNAME: root
-#      SPRING_DATASOURCE_PASSWORD: 1234
-#      SPRING_JPA_HIBERNATE_DDL_AUTO: validate
-#      SPRING_FLYWAY_LOCATION: classpath:db/migration
-#      SPRING_FLYWAY_ENABLED: true
       SERVER_PORT: 8088
       TZ: Asia/Colombo
-
-
-#  mysqldb:
-#    image: "mysql:8.1.0"
-#    container_name: "mysql-service"
-#    restart: always
-#    ports:
-#      - 1025:3306
-#    networks:
-#      - zerocode_lk_network
-#    environment:
-#      MYSQL_ROOT_PASSWORD: 1234
-#      MYSQL_DATABASE: zerocode_attendance_db
-#      TZ: Asia/Colombo
-#    healthcheck:
-#      test: [ "CMD", "mysqladmin", "ping", "-h", "localhost" ]
-#      timeout: 20s
-#      retries: 10
 
 networks:
   zerocode_lk_network:

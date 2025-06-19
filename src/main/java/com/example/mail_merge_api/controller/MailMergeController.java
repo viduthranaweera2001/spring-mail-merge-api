@@ -23,7 +23,7 @@ public class MailMergeController {
     private final Map<String, List<byte[]>> mergedDocumentsStore = new HashMap<>();
     private final Map<String, Map<String, byte[]>> imageStore = new HashMap<>();
 
-    @PostMapping("/test")
+    @GetMapping("/test")
     public String test() {
         return "test";
     }
