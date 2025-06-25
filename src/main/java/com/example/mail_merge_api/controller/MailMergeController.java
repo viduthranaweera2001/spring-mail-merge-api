@@ -86,6 +86,7 @@ public class MailMergeController {
                             default:
                                 paraHtml.append(" style='text-align: left;'");
                         }
+                        
                     }
                     paraHtml.append(">");
 
